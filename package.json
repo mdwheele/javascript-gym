@@ -1,0 +1,17 @@
+{
+  "name": "node-jungle-gym",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --inspect node_modules/.bin/jest --watchAll --runInBand",
+    "reset": "git fetch origin && git reset --hard origin/master"
+  },
+  "keywords": [],
+  "author": "Dustin Wheeler",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^27.4.0",
+    "jest": "^27.4.7"
+  }
+}

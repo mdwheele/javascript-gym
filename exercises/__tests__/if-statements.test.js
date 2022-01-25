@@ -1,0 +1,22 @@
+const { ageify } = require('../if-statements')
+
+test('Use if..elseif..else to ageify the age of a person', () => {
+  expect(ageify(20)).toBe('In your 20s')
+  expect(ageify(32)).toBe('In your 30s')
+  expect(ageify(45)).toBe('In your 40s')
+  expect(ageify(53)).toBe('In your 50s')
+  expect(ageify(64)).toBe('In your 60s')
+  expect(ageify(78)).toBe('In your 70s')
+  expect(ageify(82)).toBe('In your 80s')
+  expect(ageify(90)).toBe('In your 90s')
+  expect(ageify(99)).toBe('RIP Betty')
+  expect(agefiy(100)).toBe('Uhhh...')
+  expect(agefiy(200)).toBe('Uhhhhhhh...')
+  expect(agefiy(900)).toBe('Okay Yoda')
+
+  expect(agefiy('apple')).toBeUndefined()
+  expect(agefiy(0)).toBeUndefined()
+  expect(agefiy(-10)).toBeUndefined()
+  expect(agefiy(true)).toBeUndefined()
+  expect(agefiy(false)).toBeUndefined()
+})
