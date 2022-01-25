@@ -13,6 +13,7 @@ all the time and 2) stage fright. It's okay! By practicing these "mundane" skill
 hand rather than where to put a curly-brace.
 ## Getting Started
 
+1. Clone this repository (e.g. `git clone git@github.com:mdwheele/javascript-gym.git`)
 1. Install Gym dependencies by running `npm clean-install` (or `npm ci`, for short)
-2. Start the test-suite by running `npm test`.
-3. Write code to make tests pass!
+1. Start the test-suite by running `npm test`.
+1. Write code to make tests pass!
