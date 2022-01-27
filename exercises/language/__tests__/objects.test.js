@@ -1,4 +1,4 @@
-const { person, inventory } = require('../objects')
+const { person, inventory } = require('../../objects')
 
 test('Create a person object with a name, age, city and a method that returns a statement from the user', () => {
   expect(person.name).toBe('Sam')
