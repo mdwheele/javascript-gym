@@ -6,10 +6,10 @@
  * Try using a simple "for loop"
  *   See: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for
  *
- * Try using Array.forEach 
+ * Try using Array.prototype.forEach 
  *   See: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
  * 
- * Finally, use Array.map 
+ * Finally, use Array.prototype.map 
  *   See: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
  * 
  */
@@ -38,4 +38,21 @@ function arrayContains(haystack = [], needle) {
 
 }
 
-module.exports = { arrayContains, arrayToUppercase, wordsLongerThan }
+/**
+ * This function receives an array of unsorted strings that may contain 
+ * duplicates. The job of the function is to remove all duplicates and sort
+ * the strings alphabetically.
+ * 
+ * Try using a "Set" object:
+ *   See: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set
+ * 
+ * Try using "Array.prototype.sort":
+ *   See: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
+ * 
+ * (Challenge) Try implementing a "unique sort" without either of the above techniques.
+ */
+function arrayUniqueSort(array = []) {
+
+}
+
+module.exports = { arrayContains, arrayToUppercase, wordsLongerThan, arrayUniqueSort }

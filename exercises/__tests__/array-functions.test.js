@@ -1,4 +1,4 @@
-const { arrayToUppercase, wordsLongerThan, arrayContains } = require('../array-functions')
+const { arrayToUppercase, wordsLongerThan, arrayContains, arrayUniqueSort } = require('../array-functions')
 
 test('Convert an array of lower-case strings to upper-case', () => {
   const fruit = ['apple', 'banana', 'orange']
@@ -41,4 +41,12 @@ test('Determine if an array contains a string', () => {
   expect(arrayContains(technologies, 'php')).toBe(false)
 
   expect(arrayContains(technologies)).toBe(false)
+})
+
+test('Removing duplicates and sorting an array', () => {
+  const dogs = ['Great Dane', 'Poodle', 'Golden Retriever', 'German Shepherd', 'Poodle']
+
+  const uniqueSortedDogs = arrayUniqueSort(dogs)
+
+  expect(uniqueSortedDogs).toEqual(['German Shepherd', 'Golden Retriever', 'Great Dane', 'Poodle'])
 })
