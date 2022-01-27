@@ -5,6 +5,8 @@ describe('Sum of pairs', () => {
   test('Pair is at the beginning of the array', () => {
     const pair = sumOfPairs([1, 2, 3, 4], 3)
 
+    // i.e. the earliest pair (from left to right) that adds up to be 
+    // 3 is the pair, [1, 2]
     expect(pair).toEqual([1, 2])
   })
 
